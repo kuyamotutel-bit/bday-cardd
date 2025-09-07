@@ -21,11 +21,17 @@ canvas#canvas {
 }
 
 div#beach {
-  background-image: url(https://peanuts.store/cdn/shop/files/PNT_CollBanner_Birthday_mobile.jpg?v=1686950095);
-  /* background-size: cover; */
-  background-position: bottom right;
-  background-size: 1700px;
+  position: absolute;   /* sits behind your gift box */
+  top: 0;
+  left: 0;
+  width: 100%;          /* full width */
+  height: 100vh;        /* full screen height */
+  
+  background-image: url("Pictures/bdayposter.png");
+  background-size: contain;    /* show the whole image */
+  background-position: center; /* keep centered */
   background-repeat: no-repeat;
+  background-color: #000;      /* filler for gaps */
 }
 
 div#video {
@@ -433,7 +439,7 @@ div#sea {
   }
 
   div#beach {
-    background-size: 2000px;
+    background-size: contain;  /* or cover, whichever you prefer */
   }
 
   div#video {
